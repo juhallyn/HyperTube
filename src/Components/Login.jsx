@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { InputText } from "primereact/inputtext";
 import { Card } from 'primereact/card';
 import { Button } from "primereact/button";
+import { Password } from 'primereact/password';
 import Logo from '../logo.svg'
 
 export default class InputGroupDemo extends Component {
@@ -40,7 +41,7 @@ export default class InputGroupDemo extends Component {
                                 <span className="p-inputgroup-addon">
                                     <i className="pi pi-key"></i>
                                 </span>
-                                <InputText placeholder="Password" />
+                                <Password />
                             </div>
                         </div>
                     </div>
