@@ -1,5 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+
+import Home from './Components/Home'
+import InputGroupDemo from './Components/Login'
 
 import {
   BrowserRouter as Router,
@@ -11,20 +16,22 @@ import {
 function App() {
   return (
     <div className="App">
+
       <Router>
         <Switch>
           <Route exact path="/">
-            <h1> Home </h1>
+            <Home/>
           </Route>
           <Route path="/login">
-            <h1> Login </h1>
+            {/* <h1> Login </h1> */}
+            <InputGroupDemo/>
+          </Route>
+          <Route path="/Register">
+            <h1> Register </h1>
           </Route>
         </Switch>
       </Router>
 
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
   </div>
   );
 }
