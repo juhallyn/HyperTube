@@ -5,7 +5,7 @@ import { Button } from "primereact/button";
 import { Password } from 'primereact/password';
 import Logo from '../logo.svg'
 
-export default class InputGroupDemo extends Component {
+export default class Login extends Component {
 
     render() {
 
@@ -16,7 +16,6 @@ export default class InputGroupDemo extends Component {
         const footer = (
             <span>
                 <Button label="Login" icon="pi pi-check" />
-                <Button label="Cancel" icon="pi pi-times" className="p-button-secondary p-ml-2" />
             </span>
         );
 
@@ -41,7 +40,7 @@ export default class InputGroupDemo extends Component {
                                 <span className="p-inputgroup-addon">
                                     <i className="pi pi-key"></i>
                                 </span>
-                                <Password />
+                                <Password placeholder="Password" feedback={false}/>
                             </div>
                         </div>
                     </div>
@@ -52,4 +51,3 @@ export default class InputGroupDemo extends Component {
         );
     }
 }
-                 

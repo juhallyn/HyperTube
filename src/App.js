@@ -4,7 +4,7 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
 import Home from './Components/Home'
-import InputGroupDemo from './Components/Login'
+import Login from './Components/Login'
 
 import {
   BrowserRouter as Router,
@@ -12,6 +12,7 @@ import {
   Route,
   // Link
 } from "react-router-dom";
+import Register from './Components/Register';
 
 function App() {
   return (
@@ -23,11 +24,10 @@ function App() {
             <Home/>
           </Route>
           <Route path="/login">
-            {/* <h1> Login </h1> */}
-            <InputGroupDemo/>
+            <Login/>
           </Route>
           <Route path="/Register">
-            <h1> Register </h1>
+            <Register/>
           </Route>
         </Switch>
       </Router>

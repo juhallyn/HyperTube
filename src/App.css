@@ -1,3 +1,7 @@
+body {
+  background-color: #282c34;
+}
+
 .App {
   text-align: center;
 }
@@ -25,25 +29,38 @@
 }
 
 .App-body {
-  background-color: #282c34;
-  min-height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(3em);
+  display: flex; 
   color: white;
+  margin: auto;
+}
+
+.p-card  {
+  margin: auto;
+  margin-top: 5em;
+}
+
+.p-card .p-card-footer {
+    padding: 0rem 0 0 0;
+}
+
+.p-inputgroup {
+    margin-block-end: 1em;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+.p-card-header img {
+    width: 100%;
+    margin-top: -4em;
 }
