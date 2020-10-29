@@ -5,6 +5,31 @@ import { Button } from "primereact/button";
 import { Password } from 'primereact/password';
 import Logo from '../logo.svg'
 
+import { Toast } from 'primereact/toast';
+import { FileUpload } from 'primereact/fileupload';
+
+class FileUploadBtn extends Component {
+
+    constructor(props) {
+        super(props);
+        this.onBasicUpload = this.onBasicUpload.bind(this);
+    }
+
+    onBasicUpload() {
+        this.toast.show({severity: 'info', summary: 'Success', detail: 'File Uploaded with Basic Mode'});
+    }
+
+    render() {
+        return (
+            <div>
+                <Toast ref={(el) => { this.toast = el; }}></Toast>
+                    <h5>Profile picture</h5>
+                    <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*" maxFileSize={1000000} onUpload={this.onBasicUpload} />
+            </div>
+        )
+    }
+}
+
 export default class Register extends Component {
 
     render() {
@@ -21,12 +46,16 @@ export default class Register extends Component {
 
         return (
             <div className="App-body">
-                
-                <Card title="Register" subTitle="Create your account" style={{ width: '25em' }} className="ui-card-shadow" footer={footer} header={header}>
-                    {/* <p className="p-m-0" style={{lineHeight: '1.5'}}></p> */}
+                <Card title="Register" subTitle="Create your account" style={{ width: '35em' }} className="ui-card-shadow" footer={footer} header={header}>
                     <form>
                         <div className="p-grid p-fluid">
                             <div className="p-col-12 p-md-4">
+                                <div className="p-inputgroup">
+                                    <span className="p-inputgroup-addon">
+                                        <i className="pi pi-envelope"></i>
+                                    </span>
+                                    <InputText placeholder="Email" />
+                                </div>
                                 <div className="p-inputgroup">
                                     <span className="p-inputgroup-addon">
                                         <i className="pi pi-user"></i>
@@ -37,14 +66,17 @@ export default class Register extends Component {
                                     <span className="p-inputgroup-addon">
                                         <i className="pi pi-key"></i>
                                     </span>
-                                    <Password autoComplete="on" placeholder="Password" feedback={false}/>
+                                    <Password autoComplete="on" placeholder="Password" feedback={true}/>
                                 </div>
                             </div>
+                        </div>
+                        
+                        <div className="p-grid">
+                            <div className="p-col-fixed" style={{ width: '100px'}}><FileUploadBtn/></div>
                         </div>
                     </form>
                 </Card>
             </div>
-            
         );
     }
 }
