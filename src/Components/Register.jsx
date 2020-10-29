@@ -15,7 +15,7 @@ export default class Register extends Component {
 
         const footer = (
             <span>
-                <Button label="Login" icon="pi pi-check" />
+                <Button label="Create" icon="pi pi-check" />
             </span>
         );
 
@@ -24,22 +24,24 @@ export default class Register extends Component {
                 
                 <Card title="Register" subTitle="Create your account" style={{ width: '25em' }} className="ui-card-shadow" footer={footer} header={header}>
                     {/* <p className="p-m-0" style={{lineHeight: '1.5'}}></p> */}
-                    <div className="p-grid p-fluid">
-                        <div className="p-col-12 p-md-4">
-                            <div className="p-inputgroup">
-                                <span className="p-inputgroup-addon">
-                                    <i className="pi pi-user"></i>
-                                </span>
-                                <InputText placeholder="Username" />
-                            </div>
-                            <div className="p-inputgroup">
-                                <span className="p-inputgroup-addon">
-                                    <i className="pi pi-key"></i>
-                                </span>
-                                <Password placeholder="Password" feedback={false}/>
+                    <form>
+                        <div className="p-grid p-fluid">
+                            <div className="p-col-12 p-md-4">
+                                <div className="p-inputgroup">
+                                    <span className="p-inputgroup-addon">
+                                        <i className="pi pi-user"></i>
+                                    </span>
+                                    <InputText placeholder="Username" />
+                                </div>
+                                <div className="p-inputgroup">
+                                    <span className="p-inputgroup-addon">
+                                        <i className="pi pi-key"></i>
+                                    </span>
+                                    <Password autoComplete="on" placeholder="Password" feedback={false}/>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </Card>
             </div>
             

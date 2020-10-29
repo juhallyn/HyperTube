@@ -5,19 +5,17 @@ import 'primeicons/primeicons.css';
 
 import Home from './Components/Home'
 import Login from './Components/Login'
+import Register from './Components/Register';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  // Link
 } from "react-router-dom";
-import Register from './Components/Register';
 
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Switch>
           <Route exact path="/">
@@ -31,7 +29,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
   </div>
   );
 }
