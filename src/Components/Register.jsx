@@ -68,11 +68,16 @@ export default class Register extends Component {
                                     </span>
                                     <Password autoComplete="on" placeholder="Password" feedback={true}/>
                                 </div>
+                                <div className="p-inputgroup">
+                                    <span className="p-inputgroup-addon">
+                                        <i className="pi pi-key"></i>
+                                    </span>
+                                    <Password autoComplete="on" placeholder="Password confirmation" feedback={false}/>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div className="p-grid">
-                            <div className="p-col-fixed" style={{ width: '100px'}}><FileUploadBtn/></div>
+                            <div className="p-col-fixed" style={{ width: '100px'}}>
+                                <FileUploadBtn/>
+                            </div>
                         </div>
                     </form>
                 </Card>
