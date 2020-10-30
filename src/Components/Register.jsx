@@ -60,7 +60,13 @@ export default class Register extends Component {
                                     <span className="p-inputgroup-addon">
                                         <i className="pi pi-user"></i>
                                     </span>
-                                    <InputText placeholder="Username" />
+                                    <InputText placeholder="Name" />
+                                </div>
+                                <div className="p-inputgroup">
+                                    <span className="p-inputgroup-addon">
+                                        <i className="pi pi-user"></i>
+                                    </span>
+                                    <InputText placeholder="Firstname" />
                                 </div>
                                 <div className="p-inputgroup">
                                     <span className="p-inputgroup-addon">
