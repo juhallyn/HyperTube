@@ -4,6 +4,7 @@ import { Card } from 'primereact/card';
 import { Button } from "primereact/button";
 import { Password } from 'primereact/password';
 import Logo from '../logo.svg'
+// import style from "./styles/auth.css"
 
 export default class Login extends Component {
 
@@ -15,16 +16,15 @@ export default class Login extends Component {
 
         const footer = (
             <span>
-                <Button label="Login" icon="pi pi-check" />
+                <Button style={{ width: '100px', margin: 'auto' , display: 'flex' }} onClick={e => window.location.href='/auth/42'} label="Login"/>
             </span>
         );
 
         return (
-            <div className="App-body">
-                <Card title="Login" subTitle="connect with your 42 student account" style={{ width: '25em' }} className="ui-card-shadow" footer={footer} header={header}>
+              <div className="p-grid p-fluid p-justify-center">
+                <Card title="Login" subTitle="connect with your 42 student account" style={{ width: '25em', marginTop: '5em'}} className="ui-card-shadow" footer={footer} header={header}>
                     <form>
-                    <div className="p-grid p-fluid">
-                        <div className="p-col-12 p-md-4">
+                        <div className="p-grid p-dir-col">
                             <div className="p-inputgroup">
                                 <span className="p-inputgroup-addon">
                                     <i className="pi pi-user"></i>
@@ -38,10 +38,9 @@ export default class Login extends Component {
                                 <Password autoComplete="on" placeholder="Password" feedback={false}/>
                             </div>
                         </div>
-                    </div>
                     </form>
                 </Card>
-            </div>
+              </div>
         );
     }
 }

@@ -2,11 +2,20 @@
   "name": "hyper-tube",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
+    "@appbaseio/reactivesearch": "^3.13.0",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.0",
     "classnames": "^2.2.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2",
+    "passport": "^0.4.1",
+    "passport-42": "^1.2.6",
+    "primeflex": "^2.0.0",
     "primeicons": "^4.0.0",
     "primereact": "^5.0.1",
     "react": "^17.0.1",
@@ -14,7 +23,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-transition-group": "^4.4.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "webtorrent": "^0.110.1"
   },
   "scripts": {
     "start": "react-scripts start",

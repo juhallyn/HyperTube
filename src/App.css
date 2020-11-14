@@ -1,16 +1,13 @@
 body {
   background-color: #282c34;
+  overflow-x: hidden;
 }
-
-.App {
-  text-align: center;
-}
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
+} */
+/* 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,17 +17,50 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-body {
+/* .App-body {
   display: flex; 
   color: white;
+  margin: auto;
+} */
+
+
+.movie-title {
+  color: white;
+  margin: auto;
+  margin-left: 3px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.p-align-center {
+  padding-top: 4em;
+}
+
+.p-menubar {
+  padding: 0;
+  background: #000000c9;
+  color: #495057;
+  border: 1px solid #5098af8a;
+  border-radius: 0px;
+}
+
+.p-shadow-20:hover {
+  box-shadow: 0 10px 13px -6px rgb(0 200 255), 0 20px 31px 3px rgba(0, 0, 0, 0.14), 0 8px 38px 7px rgba(0, 0, 0, 0.12);
+}
+
+.movie-cards {
+  display: contents;
   margin: auto;
 }
 
 .p-card  {
   margin: auto;
-  margin-top: 5em;
 }
 
 .p-card .p-card-footer {
@@ -49,3 +79,29 @@ body {
 input.p-inputtext.p-component:focus {
     box-shadow: 0 0 black!important;
 }
+
+
+
+/* Movies */
+
+
+/* poster */
+
+/* .movie {
+  width: 75%;
+  color: white;
+}
+
+.title-year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title, .year {
+  font-weight: bold;
+}
+
+.poster {
+  border-radius: 5%;
+} */

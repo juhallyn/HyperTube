@@ -40,54 +40,70 @@ export default class Register extends Component {
 
         const footer = (
             <span>
-                <Button label="Create" icon="pi pi-check" />
+                <Button style={{ width: '100px', margin: 'auto' , display: 'flex' }} label="Create" />
             </span>
         );
 
         return (
             <div className="App-body">
-                <Card title="Register" subTitle="Create your account" style={{ width: '35em' }} className="ui-card-shadow" footer={footer} header={header}>
-                    <form>
-                        <div className="p-grid p-fluid">
-                            <div className="p-col-12 p-md-4">
-                                <div className="p-inputgroup">
-                                    <span className="p-inputgroup-addon">
-                                        <i className="pi pi-envelope"></i>
-                                    </span>
-                                    <InputText placeholder="Email" />
-                                </div>
-                                <div className="p-inputgroup">
-                                    <span className="p-inputgroup-addon">
-                                        <i className="pi pi-user"></i>
-                                    </span>
-                                    <InputText placeholder="Name" />
-                                </div>
-                                <div className="p-inputgroup">
-                                    <span className="p-inputgroup-addon">
-                                        <i className="pi pi-user"></i>
-                                    </span>
-                                    <InputText placeholder="Firstname" />
-                                </div>
-                                <div className="p-inputgroup">
-                                    <span className="p-inputgroup-addon">
-                                        <i className="pi pi-key"></i>
-                                    </span>
-                                    <Password autoComplete="on" placeholder="Password" feedback={true}/>
-                                </div>
-                                <div className="p-inputgroup">
-                                    <span className="p-inputgroup-addon">
-                                        <i className="pi pi-key"></i>
-                                    </span>
-                                    <Password autoComplete="on" placeholder="Password confirmation" feedback={false}/>
-                                </div>
-                            </div>
-                            <div className="p-col-fixed" style={{ width: '100px'}}>
-                                <FileUploadBtn/>
-                            </div>
-                        </div>
-                    </form>
+              <div className="p-grid p-fluid p-justify-center">
+                <Card title="Register" subTitle="Create your account" style={{ width: '35em', marginTop: '5em'}} className="ui-card-shadow" footer={footer} header={header}>
+                  <form>
+                    <div className="p-grid p-dir-col">
+                        <div className="p-inputgroup">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-envelope"></i>
+                        </span>
+                        <InputText placeholder="Email" />
+                    </div>
+                    <div className="p-inputgroup">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-user"></i>
+                        </span>
+                        <InputText placeholder="Name" />
+                    </div>
+                    <div className="p-inputgroup">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-user"></i>
+                        </span>
+                        <InputText placeholder="Firstname" />
+                    </div>
+                    <div className="p-inputgroup">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-key"></i>
+                        </span>
+                        <Password autoComplete="on" placeholder="Password" feedback={true}/>
+                    </div>
+                    <div className="p-inputgroup">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-user"></i>
+                        </span>
+                        <InputText placeholder="Username" />
+                    </div>
+                    <div className="p-inputgroup">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-key"></i>
+                        </span>
+                        <Password autoComplete="on" placeholder="Password" feedback={true}/>
+                    </div>
+                    <div className="p-inputgroup">
+                        <span className="p-inputgroup-addon">
+                            <i className="pi pi-key"></i>
+                        </span>
+                        <Password autoComplete="on" placeholder="Confirm Password" feedback={false}/>
+                    </div>
+                    <div className="p-col-fixed" style={{ width: '100px'}}>
+                        <FileUploadBtn/>
+                    </div>
+                   </div>
+                  </form>
                 </Card>
+              </div>
             </div>
         );
     }
 }
+        
+    // </div>
+    // <div className="p-col-fixed" style={{ width: '100px'}}>
+    //     <FileUploadBtn/>
