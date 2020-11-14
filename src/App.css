@@ -26,12 +26,6 @@ body {
 } */
 
 
-.movie-title {
-  color: white;
-  margin: auto;
-  margin-left: 3px;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -57,6 +51,20 @@ body {
 .movie-cards {
   display: contents;
   margin: auto;
+}
+
+.movie-title {
+  font-size: 1em;
+  color: white;
+  margin: auto;
+  margin-left: 3px;
+}
+
+.movie-date {
+  font-size: 0.8em;
+  color: #888888;
+  margin: auto;
+  margin-left: 3px;
 }
 
 .p-card  {

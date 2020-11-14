@@ -49,6 +49,9 @@ class MovieCard extends Component {
                         <h3 className="movie-title">
                             {this.printTitle(obj)}
                         </h3>
+                        <h4 className="movie-date">
+                            {obj.year}
+                        </h4>
                     </div>
                 )
             })
