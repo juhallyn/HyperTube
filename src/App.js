@@ -4,7 +4,7 @@ import 'primeicons/primeicons.css';
 import "primeflex/primeflex.css"
 import './App.css';
 
-import MenuBar from './Components/MenuBar'
+import NavBar from './Components/NavBar'
 import Home from './Components/Home'
 import Login from './Components/Login'
 import Register from './Components/Register';
@@ -21,7 +21,6 @@ import {
 function App() {
   return (
       <Router>
-        <MenuBar/>
         <Switch>
           <Route exact path="/">
             <Home/>
@@ -36,6 +35,7 @@ function App() {
             <Stream/>
           </Route>
           <Route path="/movies">
+            <NavBar/>
             <Movies/>
           </Route>
         </Switch>

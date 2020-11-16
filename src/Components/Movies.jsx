@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import 'primereact/resources/primereact.min.css';
 import axios from 'axios'
-
-
 
 class MovieCard extends Component {
 
@@ -14,7 +11,6 @@ class MovieCard extends Component {
     }
 
     componentDidMount() {
-
         axios.get("/api/movies/list").then((res) => {
             this.setState({
                 poster: res.data.data.movies
@@ -54,8 +50,7 @@ class MovieCard extends Component {
                         </h4>
                     </div>
                 )
-            })
-            }
+            })}
           </div>
         )
     }    
@@ -64,9 +59,8 @@ class MovieCard extends Component {
 export default class Movies extends Component {
 
     render() {
-
         return (
-            <div className="p-grid  p-align-center">
+            <div className="p-grid p-align-center">
                 <MovieCard/>
             </div>
         );
