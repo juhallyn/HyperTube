@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
+import "../Navbar.css"
 import Logo from '../logo.svg'
+
 
 export default class NavBar extends Component {
 
